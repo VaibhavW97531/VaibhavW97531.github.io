@@ -4,7 +4,7 @@ Welcome to the official GitHub repository of my personal developer portfolio. Th
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio Live](https://vaibhavw97531.github.io/)
+🔗 [View Portfolio Live](https://vaibhavwasamkar.github.io/)
 
 ---
 
@@ -57,7 +57,7 @@ I’m **Vaibhav Wasamkar**, a passionate Web Developer and Java Programmer with 
 | 📧 Email   | vaibhavwasamkar@gmail.com           |
 | 📞 Phone   | +91 7909500133                      |
 | 🔗 LinkedIn | [linkedin.com/in/vaibhavwasamkar](https://linkedin.com/in/vaibhavwasamkar) |
-| 💻 GitHub   | [github.com/VaibhavW97531](https://github.com/VaibhavWasamkar) |
+| 💻 GitHub   | [github.com/VaibhavWasamkar](https://github.com/VaibhavWasamkar) |
 
 ---
 
