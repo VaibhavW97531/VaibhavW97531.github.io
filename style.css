@@ -28,7 +28,7 @@
 
   --bs-primary-rgb: 255, 83, 74;
   --bs-secondary-rgb: 253, 238, 233;
-  --bs-black-rgb: 17, 17, 17;
+  --bs-black-rgb: 20, 20, 20;
   --bs-light-rgb: 241, 241, 240;
   --bs-dark-rgb: 33, 37, 41;
 
@@ -234,7 +234,7 @@ a {
   --bs-body-color: var(--bs-light);
   --bs-body-color-rgb: 241, 241, 240;
   --bs-body-bg: #111;
-  --bs-body-bg-rgb: 20, 20, 20;
+  --bs-body-bg-rgb: 17, 17, 17;
 
   color: var(--bs-gray);
 }
@@ -244,9 +244,14 @@ a {
   --bs-dropdown-link-hover-color: var(--bs-white);
 }
 
+.bg-white,
+.bg-light {
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
 [data-bs-theme=dark] .bg-white,
 [data-bs-theme=dark] .bg-light {
-  --bs-bg-opacity: 0.1;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
 }
 
 [data-bs-theme=dark] .nav-link {
@@ -453,6 +458,12 @@ a {
   height: 2px;
   background-color: var(--bs-dark);
   transition-duration: .25s;
+}
+
+[data-bs-theme="dark"] .menu-btn > span,
+[data-bs-theme="dark"] .menu-btn > span::before,
+[data-bs-theme="dark"] .menu-btn > span::after {
+  background-color: #fff !important;
 }
 
 .menu-btn>span::before {
