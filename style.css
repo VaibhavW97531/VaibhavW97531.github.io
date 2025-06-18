@@ -1,26 +1,3 @@
-/*
-Theme Name: Julie Creative Portfolio
-Theme URI: https://templatesjungle.com/
-Author: TemplatesJungle
-Author URI: https://templatesjungle.com/
-Description: Julie Creative Portfolio is specially designed product packaged for designers portfolio websites.
-Version: 1.1
-*/
-
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-
-/*------------------------------------*\
-    Table of contents
-\*------------------------------------*/
-/*------------------------------------------------
-CSS STRUCTURE:
-
-1. VARIABLES
-2. GENERAL TYPOGRAPHY
-
---------------------------------------------------------------*/
 :root,
 [data-bs-theme=light] {
   --heading-font: "Roboto", Verdana, serif;
@@ -257,7 +234,7 @@ a {
   --bs-body-color: var(--bs-light);
   --bs-body-color-rgb: 241, 241, 240;
   --bs-body-bg: #111;
-  --bs-body-bg-rgb: 17, 17, 41;
+  --bs-body-bg-rgb: 20, 20, 20;
 
   color: var(--bs-gray);
 }
@@ -272,6 +249,89 @@ a {
   --bs-bg-opacity: 0.1;
 }
 
+[data-bs-theme=dark] .nav-link {
+  color: var(--bs-light) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: rgb(151, 0, 0) !important;
+}
+
+[data-bs-theme=dark] .nav-link:hover,
+[data-bs-theme=dark] .nav-link.active {
+  color: var(--bs-primary) !important;
+}
+
+[data-bs-theme="dark"] .bg-text::after {
+  color: rgba(255, 255, 255, 0.05); /* dark mode override */
+}
+
+.resume-link {
+  color: #000; /* red shade for light mode */
+  transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+  color: rgb(151, 0, 0); /* or darker red */
+}
+
+[data-bs-theme="dark"] .resume-link {
+  color: #fff; /* light red for dark background */
+}
+
+[data-bs-theme="dark"] .resume-link:hover {
+  color: #FF6B6B;
+}
+
+/* Base style for both modes */
+.view-more-btn {
+  background-color: #212529; /* dark background */
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Override for dark mode */
+[data-bs-theme="dark"] .view-more-btn {
+  background-color: #f1f1f0; /* light button in dark mode */
+  color: #111; /* dark text */
+}
+
+[data-bs-theme="dark"] .view-more-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#themeToggleBtn {
+  background-color: #212529; /* dark background */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+#themeToggleBtn:hover {
+  background-color: #000;
+  color: var(--bs-primary);
+}
+
+[data-bs-theme="dark"] #themeToggleBtn {
+  background-color: #f1f1f0; /* light button in dark mode */
+  color: #111; /* dark text */
+}
+
+
+[data-bs-theme="dark"] #themeToggleBtn:hover {
+  background-color: #fff;
+  color: rgb(151, 0, 0);
+}
+
 /* end of Bootstrap Color Theme */
 @media (min-width: 1200px) {
 
@@ -283,13 +343,12 @@ a {
     max-width: 1440px;
   }
 }
-@media (max-width: 1200px) {
 
-  #banner {
-    display: none;
-  }
+.logo-image {
+  max-width: 120px;
 }
-  
+
+
 /* one page menu */
 #one-page-menu .nav-link {
   position: relative;
@@ -410,7 +469,7 @@ header {
   left: 0;
   top: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1230px) {
   /* mobile menu */
   header {
     transform: translate3d(-100%, 0, 0);
@@ -418,6 +477,7 @@ header {
     z-index: 8;
   }
   .nav-active header {
+    width: 300px;
     transform: translate3d(0, 0, 0);
   }
   .menu-btn {
@@ -700,5 +760,52 @@ width: 95%;
 @media only screen and (max-width: 768px) {
   .bg-text:after {
     right: 0;
+  }
+}
+
+.banner-title {
+  font-size: 90px;
+}
+.tagline {
+  font-size: 24px;
+}
+.table {
+  font-size: 24px;
+}
+
+/* Responsive override for small screens */
+@media (max-width: 600px) {
+  .banner-title {
+    font-size: 75px;
+  }
+  .tagline {
+    font-size: 20px;
+  }
+  .table {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 510px) {
+  .banner-title {
+    font-size: 55px;
+  }
+  .tagline {
+    font-size: 16px;
+  }
+  .table {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .table {
+    font-size: 12px;
   }
 }
