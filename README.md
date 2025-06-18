@@ -57,7 +57,7 @@ I’m **Vaibhav Wasamkar**, a passionate Web Developer and Java Programmer with 
 | 📧 Email   | vaibhavwasamkar@gmail.com           |
 | 📞 Phone   | +91 7909500133                      |
 | 🔗 LinkedIn | [linkedin.com/in/vaibhavwasamkar](https://linkedin.com/in/vaibhavwasamkar) |
-| 💻 GitHub   | [github.com/VaibhavW97531](https://github.com/VaibhavW97531) |
+| 💻 GitHub   | [github.com/VaibhavW97531](https://github.com/VaibhavWasamkar) |
 
 ---
 
